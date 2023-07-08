@@ -28,7 +28,6 @@ public class DeliveryTest {
         String currentDate = generateDate(4);
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(currentDate);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("05.07.2023");
         $("[data-test-id='name'] input").setValue("Иванов Иван");
         $("[data-test-id='phone'] input").setValue("+79999999999");
         $("[data-test-id='agreement']").click();
